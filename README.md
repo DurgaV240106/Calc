@@ -25,6 +25,7 @@ Validate the HTML and CSS code.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
 <html>
 <head>
   <meta charset="UTF-8">
@@ -72,7 +73,7 @@ Publish the website in the given URL.
             <input type="button" value="+" onclick="display.value += '+' " class="operator">
           </div>
           <div>
-            <input type="button" value="00" onclick="display.value += '00' ">
+            <input type="button" value="% " onclick="display.value += '%' ">
             <input type="button" value="0" onclick="display.value += '0' ">
             <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
           </div>
@@ -161,12 +162,10 @@ form input.operator{
     </div>
    
 </body>
-
-
 </html
-
+```
 ## OUTPUT:
-<img width="960" alt="Screenshot 2023-12-21 184736" src="https://github.com/DurgaV240106/Calc/assets/144870878/1f0c9cf7-bcd6-4260-a8b5-220f48d0b8ec">
+![Alt text](<durga/calcapp/static/Screenshot 2023-12-21 184736.png>)
 
 
 ## RESULT:
