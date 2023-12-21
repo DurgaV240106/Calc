@@ -165,8 +165,6 @@ form input.operator{
 </html
 ```
 ## OUTPUT:
-![Alt text](<durga/calcapp/static/Screenshot 2023-12-21 184736.png>)
-
-
+![Alt text](<durga/calcapp/static/Screenshot 2023-12-21 215628.png>)
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
