@@ -205,6 +205,7 @@ buttons.forEach((button) => {
   });
 ```
 ## OUTPUT:
-![Alt text](<durga/calcapp/static/Screenshot 2023-12-21 215628.png>)
+![Alt text](<durga/calcapp/static/web 1 (2).png>)
+![Alt text](<durga/calcapp/static/web 2 (1).png>)
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
