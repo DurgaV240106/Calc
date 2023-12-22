@@ -26,6 +26,9 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ```
+calculatordev.html
+
+
 <html>
 <head>
   <meta charset="UTF-8">
@@ -79,7 +82,13 @@ Publish the website in the given URL.
           </div>
         </form>
       </div>
-<style>
+</div>
+</body>
+</html>
+
+style.css:
+
+
 body{
   width:95%;
   height:90vh;
@@ -158,11 +167,42 @@ form input.equal{
 form input.operator{
   color:#33ffd8;
 }
-</style>
-    </div>
-   
-</body>
-</html
+
+
+scripts.js:
+
+
+const display = document.querySelector(".display input"); // Select the input element
+const buttons = document.querySelectorAll(".buttons button");
+const specialChars = ["%", "*", "/", "-", "+", "="];
+let output = "";
+
+const calculate = (btnValue) => {
+  display.focus();
+
+  if (btnValue === "=" && output !== "") {
+    try {
+      output = eval(output.replace("%", "/100")); // Use try-catch for eval
+    } catch (error) {
+      output = "Error"; // Handle potential errors from eval
+    }
+  } else if (btnValue === "AC") {
+    output = "";
+  } else if (btnValue === "DEL") {
+    output = output.toString().slice(0, -1);
+  } else {
+    if (output === "" && specialChars.includes(btnValue)) return;
+    output += btnValue;
+  }
+
+  display.value = output;
+};
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    const btnValue = e.target.dataset.value; // Get button value from dataset
+    calculate(btnValue);
+  });
 ```
 ## OUTPUT:
 ![Alt text](<durga/calcapp/static/Screenshot 2023-12-21 215628.png>)
